@@ -42,8 +42,11 @@ function show(data) {
 
         const image = clone.querySelector(".images");
 
+
         h1.textContent = post.band_name;
         members.innerHTML = post.members;
+
+
 
         image.src = post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
 
