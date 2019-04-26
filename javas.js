@@ -15,13 +15,11 @@ function show(data) {
 
         //populate it
         const h1 = clone.querySelector("h1");
-        const genres = clone.querySelector(".genres");
         const members = clone.querySelector(".members");
 
         const image = clone.querySelector(".images");
 
         h1.textContent=post.band_name.rendered;
-        genres.innerHTML=post.genre;
         members.innerHTML=post.members;
 
         image.src = post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
