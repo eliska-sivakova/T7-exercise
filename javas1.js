@@ -9,5 +9,5 @@ function showBands(data) {
     document.querySelector(".country").textContent = data.country;
     document.querySelector(".albums").textContent = data.studio_albums;
     document.querySelector(".song").textContent = data.favorite_song;
-    document.querySelector("img").src = data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
+    document.querySelector("img").src = data._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
 }

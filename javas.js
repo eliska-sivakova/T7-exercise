@@ -48,7 +48,7 @@ function show(data) {
 
 
 
-        image.src = post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
+        image.src = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
 
         clone.querySelector("a").href = "sub-page.html?id=" + post.id;
 
